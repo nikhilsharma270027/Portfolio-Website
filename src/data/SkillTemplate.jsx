@@ -11,5 +11,6 @@ export default [
     { srcLink: "/languages/figma.png", alt: "Figma" },
     { srcLink: "/languages/github.png", alt: "GitHub" },
     { srcLink: "/languages/git.png", alt: "Git" },
+    { srcLink: "/languages/docker.png", alt: "Docker" },
   ];
   

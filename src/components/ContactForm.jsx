@@ -109,7 +109,7 @@ const ContactForm = () => {
               </div>
               <div className="flex justify-start items-center py-5">
               <MailPlus size={36} strokeWidth={1.5} />
-                <p class="font-medium text-xl px-5">
+                <p className="font-medium text-xl px-5">
                   Email Me:{" 📩"}
                   <a
                     href="mailto:nikhilsharmadev27@gmail.com"

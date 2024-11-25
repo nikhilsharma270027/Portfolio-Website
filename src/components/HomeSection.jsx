@@ -59,10 +59,10 @@ const HomeSection = () => {
               <h2 id='element' className='text-white'></h2>
 
               <ul className="social">
-                <li className='social-icon text-white' title='My Linkedin'><a href="https://www.linkedin.com/in/coderaky" target="_blank"><Linkedin color='white'/></a></li>
-                <li className='social-icon text-white' title='My Github'><a href="https://github.com/coderaky" target="_blank"><Github color='white'/></a></li>
-                <li className='social-icon text-white' title='My Facebook'><a href="https://www.facebook.com/coderaky" target="_blank"><Facebook color='white'/></a></li>
-                <li className='social-icon text-white' title='My Instagram'><a href="https://www.instagram.com/coderaky" target="_blank"><Instagram color='white'/></a></li>
+                <li className='social-icon text-white' title='My Linkedin'><a href="https://www.linkedin.com/in/nikhil-sharma-496680279/" target="_blank"><Linkedin color='white'/></a></li>
+                <li className='social-icon text-white' title='My Github'><a href="https://github.com/nikhilsharma270027" target="_blank"><Github color='white'/></a></li>
+                <li className='social-icon text-white' title='My Facebook'><a href="" target='_self'><Facebook color='white'/></a></li>
+                <li className='social-icon text-white' title='My Instagram'><a href="https://www.instagram.com/_.hr.16._" target="_blank"><Instagram color='white'/></a></li>
               </ul>
             </div>
           </div>

@@ -1,3 +1,5 @@
+import CodingProfile from "../data/CodingProfile";
+
 const About = () => {
   return (
     <div className="m-5 max-h-screen ">
@@ -44,7 +46,11 @@ const About = () => {
         </div>
         <div>
           <p className="text-2xl px-5 py-5"><span className="font-medium text-2xl">Date of birth:</span> 19 August 2002</p>
-          <p className="text-blue-500 text-2xl px-5 py-5"><span className="font-medium text-2xl">Connect:</span> Email, LinkedIn, Facebook, Instagram</p>
+          <p className="text-blue-500 text-2xl px-5 py-5"><span className="font-medium text-2xl">Connect:</span>
+            <a className="font-medium text-2xl" href="mailto:nikhilsharmadev27@gmail.com">Email,</a>
+            <a className="font-medium text-2xl" href="https://www.linkedin.com/in/nikhil-sharma-496680279/"> LinkedIn,</a>
+            <a className="font-medium text-2xl" href="">Facebook,</a>
+            <a className="font-medium text-2xl" href="https://www.instagram.com/_.hr.16._/profilecard/?igsh=aWN6ZDR0Y2podDZz">Instagram</a></p>
         </div>
       </div>
 
@@ -56,23 +62,20 @@ const About = () => {
         </div>
         <hr />
         <div className="flex items-center justify-center py-5 gap-5 flex-wrap">
-          {/* First Image */}
-          <div className="shadow-xl rounded-lg border border-gray-200 p-2 max-w-[150px]">
-            <img
-              className="h-auto w-full object-contain"
-              src="/icons/leetcode.png"
-              alt="GitHub"
-            />
-          </div>
-
-          {/* Second Image */}
-          <div className="shadow-xl rounded-lg border border-gray-200 p-2 max-w-[150px]">
-            <img
-              className="h-auto w-full object-contain"
-              src="/icons/github.jpeg"
-              alt="GitHub"
-            />
-          </div>
+          {
+            CodingProfile.map((item, index) => (
+              <div key={index}  className="shadow-xl rounded-lg border border-gray-200 p-2 max-w-[150px]">
+                <a href={item.link}>
+                    <img
+                      className="h-auto w-full object-contain"
+                      src={item.image}
+                      alt={item.alt}
+                    />
+                </a>
+            </div>
+            ))
+          }
+          
         </div>
       </div>
 
