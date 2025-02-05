@@ -1,4 +1,6 @@
 import ProjectTemplate from "../data/ProjectTemplate";
+import { motion } from "framer-motion";
+import { fadeIn } from "../lib/variants";
 
 const Projects = () => {
   return (
@@ -15,11 +17,20 @@ const Projects = () => {
         Interested to see some more? Visit my GitHub page.
       </p>
 
-      <ul className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-8">
+      <motion.ul
+        variants={fadeIn("up", 0.4)}
+                    initial="hidden"
+                    whileInView={"show"}
+                    viewport={{once: false, amount: 0.5}}
+      className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-8">
         {ProjectTemplate.map((template, index) => (
           <li key={index}>
             <a href={template.link}>
-              <img
+              <motion.img
+              variants={fadeIn("up", 0.1)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{once: false, amount: 0.7}}
                 alt="portfolio"
                 className="w-96 h-64 rounded-lg shadow-lg hover:scale-105 transition-transform"
                 src={template.image}
@@ -27,7 +38,7 @@ const Projects = () => {
             </a>
           </li>
         ))}
-      </ul>
+      </motion.ul>
     </div>
   );
 };
