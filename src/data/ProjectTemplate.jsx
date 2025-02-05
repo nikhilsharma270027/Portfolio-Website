@@ -13,7 +13,7 @@ export default [
         image: "/projectImg/Ecommerce.png"
     },
     {
-        link: "https://fresh-drink-e-commerce.vercel.app/",
-        image: "/projectImg/Ecommerce.png"
+        link: "https://social-media-content-generator-ycxq.vercel.app/dashboard/",
+        image: "/projectImg/socialmedia.png"
     }
 ]
