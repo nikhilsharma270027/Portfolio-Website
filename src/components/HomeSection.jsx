@@ -41,7 +41,7 @@ const HomeSection = () => {
 
 // console.log(infoBar )
   return (
-    <section className={`w-screen max-h-screen `}>
+    <section className={`w-screen max-h-screen landing-background`}>
       <div  className={`info-bar  ${infoBar == true ? 'visible ' : 'w-full '}`}>
           {
             infoBar ? <InfoBar infoBar={infoBar} setInfoBar={setInfoBar} activeSection={activeSection} setActiveSection={setActiveSection}/> : null

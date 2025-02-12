@@ -17,28 +17,25 @@ const Projects = () => {
         Interested to see some more? Visit my GitHub page.
       </p>
 
-      <motion.ul
-        variants={fadeIn("up", 0.4)}
-                    initial="hidden"
-                    whileInView={"show"}
-                    viewport={{once: false, amount: 0.5}}
-      className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-8">
+      <ul className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-8">
         {ProjectTemplate.map((template, index) => (
           <li key={index}>
             <a href={template.link}>
               <motion.img
-              variants={fadeIn("up", 0.1)}
+              variants={fadeIn("left", 0.1)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{once: false, amount: 0.7}}
+              viewport={{once: false, amount: 0.2}}
+              whileHover={{ scale: 1.05 }} // Add scale effect on hover
+                transition={{ type: "spring", stiffness: 300 }} // Optional: Add a springy transition
                 alt="portfolio"
-                className="w-96 h-64 rounded-lg shadow-lg hover:scale-105 transition-transform"
+                className="w-96 h-64 rounded-lg shadow-lg "
                 src={template.image}
               />
             </a>
           </li>
         ))}
-      </motion.ul>
+      </ul>
     </div>
   );
 };
