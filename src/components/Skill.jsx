@@ -1,8 +1,11 @@
+import FadeIn from "../common/AnimatedWrapper";
 import SkillTemplate from "../data/SkillTemplate";
 import { motion } from "framer-motion"; // Import motion from framer-motion
 
 const Skills = () => {
   return (
+    <FadeIn>
+
     <section className="m-5">
       <h2 className="text-2xl font-bold mb-4">SKILLS</h2>
       <hr className="py-5" />
@@ -43,11 +46,12 @@ const Skills = () => {
               src={Skill.srcLink}
               alt={Skill.alt}
               className="w-28 opacity-70 transition-opacity group-hover:opacity-100"
-            />
+              />
           </motion.div>
         ))}
       </div>
     </section>
+        </FadeIn>
   );
 };
 

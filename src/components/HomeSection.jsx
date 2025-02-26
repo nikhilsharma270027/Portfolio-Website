@@ -64,6 +64,20 @@ const HomeSection = () => {
                 <li className='social-icon text-white' title='My Facebook'><a href="" target='_self'><Facebook color='white'/></a></li>
                 <li className='social-icon text-white' title='My Instagram'><a href="https://www.instagram.com/_.hr.16._" target="_blank"><Instagram color='white'/></a></li>
               </ul>
+
+              <div className='pt-4'>
+              <a 
+                href="/Nikhil sharma (Full stack developer) (1).pdf" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center border border-white text-white px-6 py-3 rounded-lg font-semibold shadow-md backdrop-blur-md bg-white/1 hover:bg-white/20 transition duration-300"
+            >
+                Download Resume
+            </a>
+
+
+
+              </div>
             </div>
           </div>
           {/* Intro */}
