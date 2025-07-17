@@ -97,12 +97,13 @@ const HomeSection = () => {
                 </li>
               </ul>
 
-              <div className='pt-4'>
+              <div className='pt-8'>
                 <a
-                  href="/Nikhil sharma (Full stack developer).pdf"
+                  href="/Nikhil_Sharma ( Frontend developer ).pdf"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center border border-white text-white px-6 py-3 rounded-lg font-semibold shadow-md backdrop-blur-md bg-white/10 hover:bg-white/20 transition duration-300"
+                  // className="inline-flex items-center justify-center border border-white text-white px-6 py-3 rounded-lg font-semibold shadow-md backdrop-blur-md bg-white/10 hover:bg-white/20 transition duration-300"
+                  className="glow-button"
                   onClick={() => {
                     ReactGA.event({
                       category: "User",
