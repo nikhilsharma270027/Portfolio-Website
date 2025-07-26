@@ -51,7 +51,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   /* background-color: #8e92ee; */
-  background-image: url('/background/bg3.jpg');
+  background-image: url('/background/Framer.png');
   background-repeat: no-repeat;
   background-position: inherit;
   background-size: cover; /* Make the image cover the entire container */
@@ -104,7 +104,8 @@ span{
   position: absolute;
   width: 700px;
   height: 700px;
-  border: 1px solid rgba(255,255,255,.4);
+  border-right: 1px solid rgba(255,255,255,.4);
+  border-bottom: 1px solid rgba(255,255,255,.4);
   display: table;
   transition: all 0.5s;
   z-index: 1

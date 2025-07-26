@@ -11,12 +11,12 @@ const HomeSection = () => {
     // Typing effect for exampleText
     const date = new Date();
     const exampleText = [
-      "HELLO",
+      "HELLO👋",
       "WEB DEVELOPER💻",
       "BACKEND🖲️",
-      `${date.getHours()} O' CLOCK`,
-      "ANIME",
-      "CRICKET",
+      `${date.getHours()} O' CLOCK 🕒`,
+      "ANIMATION🎞️",
+      "CRICKET🏏",
       "SWIMMING🏊‍♀️",
       "LEARNER🚀",
       "READING📚",
@@ -97,7 +97,7 @@ const HomeSection = () => {
                 </li>
               </ul>
 
-              <div className='pt-8'>
+              <div className='pt-8 mb-8'>
                 <a
                   href="/Nikhil_Sharma ( Frontend developer ).pdf"
                   target="_blank"

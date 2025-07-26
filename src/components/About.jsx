@@ -128,7 +128,7 @@ const About = () => {
 
       {/* Section 10: Coding Profiles */}
       <FadeIn>
-        <div className="py-7 h-screen">
+        <div className="py-7 h-100px">
           <div>
             <h2 className="font-medium text-2xl py-2">CODING PROFILE</h2>
           </div>
@@ -153,6 +153,24 @@ const About = () => {
               ))}
             </div>
           </FadeIn>
+        </div>
+      </FadeIn>
+
+
+      {/* Postman badge// */}
+      <FadeIn>
+        <div className="py-7 h-fit">
+          <h2 className="font-medium text-2xl py-2">BADGES</h2>
+          <hr />
+          <div className="flex items-center justify-center py-5">
+            <a href="https://badgr.com/public/assertions/your-postman-badge-id" target="_blank" rel="noopener noreferrer">
+              <img
+                className="h-auto w-full max-w-[250px] object-contain"
+                src="./badge/postman-badge.png"
+                alt="Postman API Fundamentals Badge"
+              />
+            </a>
+          </div>
         </div>
       </FadeIn>
     </div>
