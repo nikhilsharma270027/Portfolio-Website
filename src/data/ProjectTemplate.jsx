@@ -1,23 +1,3 @@
-// export default [
-//     {
-//         link: "https://nikhil-sharma-portfolio.vercel.app/",
-//         image: "/projectImg/portfolio.png"
-
-//     },
-//     {
-//         link: "https://blog-sphere-mern.vercel.app/",
-//         image: "/projectImg/blog.png"
-//     },
-//     {
-//         link: "https://fresh-drink-e-commerce.vercel.app/",
-//         image: "/projectImg/Ecommerce.png"
-//     },
-//     {
-//         link: "https://social-media-content-generator-ycxq.vercel.app/dashboard/",
-//         image: "/projectImg/socialmedia.png"
-//     }
-// ]
-
 export default [
   {
     title: "Portfolio Website",
@@ -65,7 +45,7 @@ export default [
     title: "SocialSync",
     type: "Fun Project",
     description: "AI-powered content generator for social media posts ⚡",
-    link: "https://social-media-content-generator-ycxq.vercel.app/dashboard/",
+    link: "https://social-media-content-generator-umber.vercel.app/",
     image: "/projectImg/socialmedia.png",
     features: [
       "Content generation using AI",
@@ -74,5 +54,19 @@ export default [
       "Responsive Shadcn UI for creators"
     ],
     tech: ["Next.js", "TypeScript", "Clerk", "PostgreSQL", "Drizzle ORM", "Tailwind"]
+  },
+  {
+    title: "Mind-Path AI",
+    type: "Serious Project",
+    description: "AI-powered study assistant with intelligent planning and resource curation 📚",
+    link: "https://mind-path-nextjs.vercel.app/",
+    image: "/projectImg/mindpath.png",
+    features: [
+      "Groq API, HuggingFace & Tavily API integration",
+      "Shadcn UI with Zustand for state management",
+      "Optimized MongoDB backend for 50+ concurrent users",
+      "Responsive and accessible UI design"
+    ],
+    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Zustand", "Node.js", "MongoDB", "Shadcn/UI"]
   }
 ];
