@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Facebook, Github, Instagram, Linkedin } from 'lucide-react';
 import InfoBar from './InfoBar';
+import Fireflies from './Fireflies';
 import ReactGA from "react-ga4"; // 👈 Import ReactGA
 
 const HomeSection = () => {
@@ -54,6 +55,7 @@ const HomeSection = () => {
 
   return (
     <section className={`w-screen max-h-screen landing-background`}>
+      <Fireflies />
       <div className={`info-bar ${infoBar ? 'visible' : 'w-full'}`}>
         {infoBar && (
           <InfoBar

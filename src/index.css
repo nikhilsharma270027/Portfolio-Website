@@ -51,13 +51,13 @@ body {
   padding: 0;
   box-sizing: border-box;
   /* background-color: #8e92ee; */
-  background-image: url('/background/blackbg.jpg');
+  background-image: url('/background/villagebg.png');
   background-repeat: no-repeat;
-  background-position: inherit;
+  background-position: center;
   background-size: cover; /* Make the image cover the entire container */
   background-position: center; /* Position the image at the center */
   background-attachment: fixed;
-  background-blend-mode: overlay;
+  /* background-blend-mode: overlay; */
   /* background-color: black; */
 
 }

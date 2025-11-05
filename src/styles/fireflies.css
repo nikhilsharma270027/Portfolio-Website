@@ -1,0 +1,188 @@
+/* Fireflies Container */
+.fireflies-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* Base Firefly Styles */
+.firefly {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 223, 100, 1) 0%, rgba(255, 200, 50, 0.8) 30%, rgba(255, 180, 0, 0) 70%);
+  box-shadow: 
+    0 0 10px rgba(255, 223, 100, 0.8),
+    0 0 20px rgba(255, 200, 50, 0.6),
+    0 0 30px rgba(255, 180, 0, 0.4);
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+/* Individual Firefly Animations */
+.firefly-1 {
+  top: 20%;
+  left: 10%;
+  animation: float1 12s infinite, glow 2s infinite alternate;
+}
+
+.firefly-2 {
+  top: 60%;
+  left: 80%;
+  animation: float2 15s infinite, glow 2.5s infinite alternate;
+  animation-delay: 1s;
+}
+
+.firefly-3 {
+  top: 40%;
+  left: 30%;
+  animation: float3 18s infinite, glow 3s infinite alternate;
+  animation-delay: 2s;
+}
+
+.firefly-4 {
+  top: 70%;
+  left: 60%;
+  animation: float4 14s infinite, glow 2.2s infinite alternate;
+  animation-delay: 0.5s;
+}
+.firefly-5 {
+  top: 90%;
+  left: 90%;
+  animation: float4 14s infinite, glow 2.2s infinite alternate;
+  animation-delay: 0.5s;
+}
+.firefly-6 {
+  top: 80%;
+  left: 30%;
+  animation: float4 14s infinite, glow 2.2s infinite alternate;
+  animation-delay: 0.5s;
+}
+.firefly-7 {
+  top: 10%;
+  left: 90%;
+  animation: float4 14s infinite, glow 2.2s infinite alternate;
+  animation-delay: 0.5s;
+}
+
+/* Floating Animations */
+@keyframes float1 {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(100px, -80px);
+  }
+  50% {
+    transform: translate(200px, 50px);
+  }
+  75% {
+    transform: translate(50px, 100px);
+  }
+}
+
+@keyframes float2 {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-120px, 60px);
+  }
+  50% {
+    transform: translate(-80px, -100px);
+  }
+  75% {
+    transform: translate(-150px, 40px);
+  }
+}
+
+@keyframes float3 {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(150px, 100px);
+  }
+  50% {
+    transform: translate(-50px, -80px);
+  }
+  75% {
+    transform: translate(100px, -50px);
+  }
+}
+
+@keyframes float4 {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-100px, -70px);
+  }
+  50% {
+    transform: translate(80px, 90px);
+  }
+  75% {
+    transform: translate(-120px, 30px);
+  }
+}
+
+/* Glowing Effect */
+@keyframes glow {
+  0% {
+    opacity: 0.4;
+    box-shadow: 
+      0 0 8px rgba(255, 223, 100, 0.6),
+      0 0 15px rgba(255, 200, 50, 0.4),
+      0 0 25px rgba(255, 180, 0, 0.2);
+  }
+  100% {
+    opacity: 1;
+    box-shadow: 
+      0 0 15px rgba(255, 223, 100, 1),
+      0 0 30px rgba(255, 200, 50, 0.8),
+      0 0 45px rgba(255, 180, 0, 0.6);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .firefly {
+    width: 6px;
+    height: 6px;
+  }
+  
+  /* Reduce movement range on smaller screens */
+  @keyframes float1 {
+    0%, 100% { transform: translate(0, 0); }
+    25% { transform: translate(60px, -50px); }
+    50% { transform: translate(120px, 30px); }
+    75% { transform: translate(30px, 60px); }
+  }
+  
+  @keyframes float2 {
+    0%, 100% { transform: translate(0, 0); }
+    25% { transform: translate(-70px, 40px); }
+    50% { transform: translate(-50px, -60px); }
+    75% { transform: translate(-90px, 25px); }
+  }
+  
+  @keyframes float3 {
+    0%, 100% { transform: translate(0, 0); }
+    25% { transform: translate(90px, 60px); }
+    50% { transform: translate(-30px, -50px); }
+    75% { transform: translate(60px, -30px); }
+  }
+  
+  @keyframes float4 {
+    0%, 100% { transform: translate(0, 0); }
+    25% { transform: translate(-60px, -45px); }
+    50% { transform: translate(50px, 55px); }
+    75% { transform: translate(-70px, 20px); }
+  }
+}
